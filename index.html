@@ -6,8 +6,8 @@
   <title>EinfachDigital – Webdesign & Upgrades</title>
   <style>
     :root {
-      --primary-color: #0E1A2D; /* Dark Navy from logo */
-      --accent-color: #298986; /* Teal from logo */
+      --primary-color: #0E1A2D;
+      --accent-color: #298986;
       --light-gray: #F5F5F5;
       --font-stack: 'Helvetica Neue', Arial, sans-serif;
     }
@@ -18,7 +18,6 @@
       background: white;
       line-height: 1.6;
     }
-    /* Logo above banner */
     .logo-container {
       background: white;
       text-align: center;
@@ -26,7 +25,7 @@
     }
     .logo-container img {
       width: 100%;
-      max-width: 800px;
+      max-width: 300px;
       height: auto;
       display: block;
       margin: 0 auto;
@@ -47,14 +46,14 @@
       background: var(--accent-color);
       color: white;
       text-align: center;
-      padding: 4rem 1rem;
+      padding: 2.5rem 1rem;
     }
     .hero h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
     .hero p {
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin: 1rem 0 2rem;
     }
     .btn {
@@ -130,15 +129,17 @@
       background: var(--primary-color);
       color: white;
     }
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 1.5rem; }
+      .hero p { font-size: 0.95rem; }
+      .logo-container img { max-width: 220px; }
+    }
   </style>
 </head>
 <body>
-  <!-- Großes Logo über dem Banner -->
   <div class="logo-container">
     <img src="logo.png" alt="EinfachDigital Logo">
   </div>
-
-  <!-- Navigation -->
   <header>
     <nav>
       <a href="#services">Leistungen</a>
@@ -146,16 +147,12 @@
       <a href="#contact">Kontakt</a>
     </nav>
   </header>
-
-  <!-- Banner / Hero -->
   <section class="hero">
     <h1>EinfachDigital</h1>
     <p>Professionelles Webdesign und Upgrades für Ihr Business</p>
     <a href="#contact" class="btn">Jetzt unverbindlich anfragen</a>
   </section>
-
   <div class="container">
-    <!-- Leistungen -->
     <section id="services" class="services">
       <div class="service-item">
         <h2>Neues Webdesign</h2>
@@ -170,8 +167,6 @@
         <p>Stetiger Support und Pflege, damit Ihre Seite zuverlässig bleibt.</p>
       </div>
     </section>
-
-    <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
       <div class="portfolio-item">
         <img src="https://via.placeholder.com/300x200" alt="Projekt 1">
@@ -190,8 +185,6 @@
       </div>
     </section>
   </div>
-
-  <!-- Kontakt -->
   <section id="contact" class="contact">
     <div class="container">
       <h2>Kontaktieren Sie uns</h2>
@@ -205,7 +198,6 @@
       </form>
     </div>
   </section>
-
   <footer>
     &copy; 2025 EinfachDigital. Alle Rechte vorbehalten.
   </footer>
