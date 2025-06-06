@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EinfachDigital – Webdesign & Upgrades</title>
+  <style>
+    :root {
+      --primary-color: #0E1A2D; /* Dark Navy from logo */
+      --accent-color: #298986; /* Teal from logo */
+      --light-gray: #F5F5F5;
+      --font-stack: 'Helvetica Neue', Arial, sans-serif;
+    }
+    body {
+      margin: 0;
+      font-family: var(--font-stack);
+      color: var(--primary-color);
+      background: white;
+      line-height: 1.6;
+    }
+    /* Logo above banner */
+    .logo-container {
+      background: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    .logo-container img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    header {
+      background: var(--light-gray);
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+    .hero {
+      background: var(--accent-color);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin: 1rem 0 2rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: white;
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #e0e0e0;
+    }
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .services, .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .service-item, .portfolio-item {
+      background: var(--light-gray);
+      padding: 1.5rem;
+      border-left: 4px solid var(--accent-color);
+      border-radius: 4px;
+    }
+    .portfolio-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .portfolio-item h3 {
+      margin: 0.75rem 0 0;
+    }
+    .contact {
+      background: var(--light-gray);
+      padding: 2rem 1rem;
+    }
+    .contact form {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .contact input,
+    .contact textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .contact button {
+      padding: 0.75rem;
+      border: none;
+      background: var(--accent-color);
+      color: white;
+      font-size: 1.1rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: var(--primary-color);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Großes Logo über dem Banner -->
+  <div class="logo-container">
+    <img src="logo.png" alt="EinfachDigital Logo">
+  </div>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <a href="#services">Leistungen</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+
+  <!-- Banner / Hero -->
+  <section class="hero">
+    <h1>EinfachDigital</h1>
+    <p>Professionelles Webdesign und Upgrades für Ihr Business</p>
+    <a href="#contact" class="btn">Jetzt unverbindlich anfragen</a>
+  </section>
+
+  <div class="container">
+    <!-- Leistungen -->
+    <section id="services" class="services">
+      <div class="service-item">
+        <h2>Neues Webdesign</h2>
+        <p>Sie benötigen eine moderne, responsive Website? Wir entwickeln maßgeschneiderte Lösungen.</p>
+      </div>
+      <div class="service-item">
+        <h2>Website-Upgrade</h2>
+        <p>Ihr Auftritt wirkt veraltet? Wir erneuern und optimieren Bestandssysteme für beste Performance.</p>
+      </div>
+      <div class="service-item">
+        <h2>Wartung & Support</h2>
+        <p>Stetiger Support und Pflege, damit Ihre Seite zuverlässig bleibt.</p>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200" alt="Projekt 1">
+        <h3>Projekt 1</h3>
+        <p>Kurzbeschreibung des Projekts, z.B. responsive Unternehmenswebseite.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200" alt="Projekt 2">
+        <h3>Projekt 2</h3>
+        <p>Modernisierung eines bestehenden Onlineshops.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200" alt="Projekt 3">
+        <h3>Projekt 3</h3>
+        <p>Performance-Optimierung für schnellen Seitenaufbau.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Kontakt -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Kontaktieren Sie uns</h2>
+      <p>Telefon: +49 1522 171691 | +49 1514 4644905</p>
+      <p>E-Mail: <a href="mailto:einfachdigital.service@gmail.com">einfachdigital.service@gmail.com</a></p>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Ihr Name" required>
+        <input type="email" name="email" placeholder="Ihre E-Mail" required>
+        <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+        <button type="submit">Absenden</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 EinfachDigital. Alle Rechte vorbehalten.
+  </footer>
+</body>
+</html>
